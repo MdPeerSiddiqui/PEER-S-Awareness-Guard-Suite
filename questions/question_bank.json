@@ -1,0 +1,158 @@
+[
+  {
+    "id": "Q01",
+    "vector": "Email Phishing & Lookalike Domains",
+    "scenario": "You receive an urgent email from 'support@micros0ft-security-update.com' stating your corporate Microsoft 365 password expires in 1 hour. It provides a button saying 'Keep Current Password'. What is the correct action?",
+    "options": [
+      "A) Click the button immediately to avoid losing access to your email.",
+      "B) Reply to the email asking if it is a legitimate notice.",
+      "C) Do not click the link; report the email to the SOC team via official channels.",
+      "D) Forward the email to your entire team to warn them."
+    ],
+    "correct_answer": "C",
+    "explanation": "The domain uses a homoglyphic typo-squat ('micros0ft' with a zero). Attackers use artificial urgency (1-hour deadline) to compel fast, careless decisions. Legitimate IT departments never request password confirmations via urgent links."
+  },
+  {
+    "id": "Q02",
+    "vector": "Physical Baiting & Removable Media",
+    "scenario": "Walking into the corporate office from the parking lot, you notice a brand-new metallic USB flash drive labeled 'Q4_Executive_Payroll_Confidential.xlsx'. What should you do?",
+    "options": [
+      "A) Plug it into your work laptop to inspect the owner's identity from file metadata.",
+      "B) Hand the drive directly to Corporate Physical Security or the IT Help Desk without plugging it in.",
+      "C) Plug it into an air-gapped personal laptop at home instead.",
+      "D) Leave it on the reception counter for whoever dropped it to pick up."
+    ],
+    "correct_answer": "B",
+    "explanation": "USB baiting drops rely on curiosity and greed. Connecting untrusted media can trigger malicious shortcuts, BadUSB keystroke injection, or AutoRun exploits. The golden rule is: Never plug it in."
+  },
+  {
+    "id": "Q03",
+    "vector": "Voice Phishing (Vishing) & Authority Pressure",
+    "scenario": "You receive an internal phone call from someone claiming to be 'David from Corporate IT Helpdesk'. He states a major cyberattack is underway and demands your multi-factor authentication (MFA) SMS code to 'patch your account'. How do you respond?",
+    "options": [
+      "A) Provide the code quickly to help defend against the attack.",
+      "B) Refuse to disclose the code, hang up, and call the official IT Helpdesk extension from the corporate directory.",
+      "C) Ask him to provide his employee badge number first, then read the code.",
+      "D) Transfer the call to your department manager."
+    ],
+    "correct_answer": "B",
+    "explanation": "Pretexting calls create panic and exploit authority. One-time MFA codes are strictly private credentials that legitimate IT staff will never ask you to read or disclose over the phone."
+  },
+  {
+    "id": "Q04",
+    "vector": "SMS Phishing (Smishing) & Package Lures",
+    "scenario": "You receive an SMS on your corporate mobile: 'FedEx: Your package delivery has been suspended due to an incomplete address. Update details within 12 hours: http://fedx-tracking-portal.xyz/verify'. What should you do?",
+    "options": [
+      "A) Click the link and enter your corporate address since you frequently order office supplies.",
+      "B) Reply 'STOP' to the text message.",
+      "C) Delete the SMS and report the sender number as spam without clicking the link.",
+      "D) Forward the message to colleagues to see if anyone ordered a delivery."
+    ],
+    "correct_answer": "C",
+    "explanation": "Smishing exploits routine expectations like deliveries. The untrusted TLD (.xyz) and misspelled brand name ('fedx') indicate credential harvesting or malware. Replying 'STOP' confirms your number is active to attackers."
+  },
+  {
+    "id": "Q05",
+    "vector": "Watering Hole & Drive-by Downloads",
+    "scenario": "While browsing a specialized industry technical forum you visit weekly, a browser banner suddenly pops up saying: 'Sqrock Corporate VPN Certificate Expired! Download Critical Security Patch now (vpn-patch.exe)'. What is your best action?",
+    "options": [
+      "A) Download and run the file immediately to ensure your VPN connectivity is secure.",
+      "B) Close the tab immediately, disconnect your browser session, and notify the SOC of a suspected watering hole compromise.",
+      "C) Download the file but scan it with your local desktop antivirus before opening.",
+      "D) Share the link with the internal DevOps team to see if they updated the certificate."
+    ],
+    "correct_answer": "B",
+    "explanation": "Watering hole attacks compromise trusted third-party websites to inject fake update prompts. Legitimate corporate software patches are deployed centrally through MDM/SCCM, never via random public website popups."
+  },
+  {
+    "id": "Q06",
+    "vector": "Social Media Impersonation & Recruiter Lures",
+    "scenario": "A LinkedIn profile claiming to be an 'Executive Headhunter at Google' messages you offering a lucrative remote consulting role. They send a password-protected zip file named 'Job_Description_NDA.zip' and ask you to extract and enable macros to sign it. What should you do?",
+    "options": [
+      "A) Extract the archive and enable macros since executive offers are confidential.",
+      "B) Do not open the attachment; inspect their profile for bot/impersonation signals and report the profile.",
+      "C) Forward the zip file to your personal email to open it safely on your phone.",
+      "D) Ask the recruiter to email the files to your corporate inbox instead."
+    ],
+    "correct_answer": "B",
+    "explanation": "Social media recruiter lures use ego and financial baiting. Password-protected ZIP files and macro-enabled documents bypass cloud email scanners to deliver trojans or infostealers."
+  },
+  {
+    "id": "Q07",
+    "vector": "Physical Security & Tailgating",
+    "scenario": "You scan your access badge at the secure turnstile of the corporate headquarters. An unfamiliar individual holding coffee cups smiles and rushes behind you, asking you to hold the door open. What is the standard protocol?",
+    "options": [
+      "A) Hold the door open politely; it is rude to make someone with full hands scan their badge.",
+      "B) Politely ask them to badge in themselves or escort them to the security reception desk.",
+      "C) Let them in if they are dressed in formal business attire.",
+      "D) Run ahead and notify security after you enter the building."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tailgating (piggybacking) exploits social politeness to bypass electronic access controls. Attackers frequently use props (holding coffee, carrying boxes) to manipulate victims into holding secure doors."
+  },
+  {
+    "id": "Q08",
+    "vector": "Clean Desk & Shoulder Surfing",
+    "scenario": "You are finishing a confidential client audit report in a busy airport lounge while waiting for a flight. What physical security precautions must you observe?",
+    "options": [
+      "A) Sit anywhere and just lower the screen brightness.",
+      "B) Position your back to a solid wall, apply a privacy filter screen, and lock your screen whenever stepping away.",
+      "C) Connect to the free airport open Wi-Fi to upload the report to cloud storage.",
+      "D) Read the report aloud into your Bluetooth headset to dictate notes."
+    ],
+    "correct_answer": "B",
+    "explanation": "Shoulder surfing allows adversaries to view proprietary credentials and sensitive documents in public spaces. Privacy screens and locking workstations immediately upon departure prevent visual data compromise."
+  },
+  {
+    "id": "Q09",
+    "vector": "Multi-Factor Authentication (MFA) Fatigue",
+    "scenario": "At 2:00 AM, your phone receives 15 consecutive push notifications from your Microsoft Authenticator app asking to approve a login from an IP address in another country. What should you do?",
+    "options": [
+      "A) Approve the notification so your phone stops vibrating and you can sleep.",
+      "B) Tap 'Deny', select 'Report Fraud / I Did Not Request This', and immediately notify the SOC team.",
+      "C) Ignore the notifications and wait until morning to see if your password works.",
+      "D) Change your Wi-Fi password."
+    ],
+    "correct_answer": "B",
+    "explanation": "MFA Fatigue (Push Bombing) overwhelms victims with notifications hoping they will inadvertently click 'Approve' to silence their phone. Always deny the request and flag it as unauthorized fraud immediately."
+  },
+  {
+    "id": "Q10",
+    "vector": "Business Email Compromise (BEC) & Whale Baiting",
+    "scenario": "You receive an email from the CEO's personal Gmail account marked 'URGENT & CONFIDENTIAL'. She claims to be in a closed-door acquisition meeting and instructs you to wire $25,000 to an offshore vendor before 4:00 PM today without discussing it with anyone. What should you do?",
+    "options": [
+      "A) Process the wire immediately to avoid angering executive leadership.",
+      "B) Reply to the Gmail account asking for signed confirmation.",
+      "C) Pause the transaction; independently verify the request through an out-of-band channel (e.g., calling the CEO's executive assistant or using official Slack).",
+      "D) Transfer half the amount now and the other half after confirming."
+    ],
+    "correct_answer": "C",
+    "explanation": "Business Email Compromise (BEC) leverages executive authority and secrecy to bypass dual-control accounting safeguards. Never authorize financial transfers without out-of-band verification via known, official telephone numbers."
+  },
+  {
+    "id": "Q11",
+    "vector": "Quid Pro Quo & Gift Baiting",
+    "scenario": "A caller claims to represent an enterprise technology research firm conducting a '5-Minute Cybersecurity Survey'. They offer you a $100 Amazon gift card if you share details about the internal firewalls, antivirus software, and server versions used at your organization. How do you respond?",
+    "options": [
+      "A) Answer the questions since general software names are public knowledge.",
+      "B) Decline to participate and report the call to the security team as an active reconnaissance attempt.",
+      "C) Accept the gift card first and only provide answers about older, retired systems.",
+      "D) Ask a colleague to take the survey with you so you can split the reward."
+    ],
+    "correct_answer": "B",
+    "explanation": "Quid Pro Quo attacks offer a perceived benefit (gift cards, free swag, fake assistance) in exchange for internal technical architecture data. Disclosing internal tech stacks aids attackers in tailoring zero-day or CVE exploits."
+  },
+  {
+    "id": "Q12",
+    "vector": "Incident Escalation & Reporting Protocol",
+    "scenario": "You realize you accidentally clicked a suspicious link in an email and entered your corporate login credentials before noticing the URL was fake. What is the most critical first step?",
+    "options": [
+      "A) Do not tell anyone because you might get written up or fired.",
+      "B) Immediately report the incident to the SOC / IT Security team so they can revoke active sessions and reset your password.",
+      "C) Delete your browser history and restart your computer.",
+      "D) Wait 24 hours to see if unauthorized charges appear on your corporate credit card."
+    ],
+    "correct_answer": "B",
+    "explanation": "Speed of reporting is the single most important factor in containing an account compromise. Immediate reporting allows the SOC to revoke stolen session tokens, isolate endpoints, and prevent lateral network movement. Sqrock enforces a zero-penalty reporting culture."
+  }
+]

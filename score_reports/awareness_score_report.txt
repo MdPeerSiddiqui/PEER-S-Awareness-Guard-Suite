@@ -1,0 +1,26 @@
+===============================================================================
+       SQROCK IT SOLUTIONS - SECURITY AWARENESS EVALUATION REPORT              
+===============================================================================
+Candidate Name       : Mohammed Peer Siddiqui
+Employee ID          : SQ-EMP-108
+Department           : Cyber Defense Operations
+Completion Timestamp : 2026-11-07T13:45:10Z
+Assessment Score     : 12 / 12 (100.0%)
+Threat Susceptibility: 0.0% (TSI)
+Assigned Risk Tier   : TIER_1_CYBER_DEFENDER_ELITE
+Formal Status        : EXEMPLARY (Exhibits high vigilance against advanced social engineering)
+===============================================================================
+Itemized Assessment Question Audit:
+  [PASS] Q01: Email Phishing & Lookalike Domains -> Answered: C (Correct: C)
+  [PASS] Q02: Physical Baiting & Removable Media -> Answered: B (Correct: B)
+  [PASS] Q03: Voice Phishing (Vishing) & Authority Pressure -> Answered: B (Correct: B)
+  [PASS] Q04: SMS Phishing (Smishing) & Package Lures -> Answered: C (Correct: C)
+  [PASS] Q05: Watering Hole & Drive-by Downloads -> Answered: B (Correct: B)
+  [PASS] Q06: Social Media Impersonation & Recruiter Lures -> Answered: B (Correct: B)
+  [PASS] Q07: Physical Security & Tailgating -> Answered: B (Correct: B)
+  [PASS] Q08: Clean Desk & Shoulder Surfing -> Answered: B (Correct: B)
+  [PASS] Q09: Multi-Factor Authentication (MFA) Fatigue -> Answered: B (Correct: B)
+  [PASS] Q10: Business Email Compromise (BEC) & Whale Baiting -> Answered: C (Correct: C)
+  [PASS] Q11: Quid Pro Quo & Gift Baiting -> Answered: B (Correct: B)
+  [PASS] Q12: Incident Escalation & Reporting Protocol -> Answered: B (Correct: B)
+===============================================================================

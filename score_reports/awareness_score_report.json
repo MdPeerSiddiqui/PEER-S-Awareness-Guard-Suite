@@ -1,0 +1,100 @@
+[
+  {
+    "candidate_name": "Mohammed Peer Siddiqui",
+    "employee_id": "SQ-EMP-108",
+    "department": "Cyber Defense Operations",
+    "timestamp_utc": "2026-11-07T13:45:10Z",
+    "score": 12,
+    "total_questions": 12,
+    "percentage": 100.0,
+    "threat_susceptibility_index": 0.0,
+    "risk_tier": "TIER_1_CYBER_DEFENDER_ELITE",
+    "evaluation_status": "EXEMPLARY (Exhibits high vigilance against advanced social engineering)",
+    "question_results": [
+      {
+        "question_id": "Q01",
+        "vector": "Email Phishing & Lookalike Domains",
+        "user_answer": "C",
+        "correct_answer": "C",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q02",
+        "vector": "Physical Baiting & Removable Media",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q03",
+        "vector": "Voice Phishing (Vishing) & Authority Pressure",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q04",
+        "vector": "SMS Phishing (Smishing) & Package Lures",
+        "user_answer": "C",
+        "correct_answer": "C",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q05",
+        "vector": "Watering Hole & Drive-by Downloads",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q06",
+        "vector": "Social Media Impersonation & Recruiter Lures",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q07",
+        "vector": "Physical Security & Tailgating",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q08",
+        "vector": "Clean Desk & Shoulder Surfing",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q09",
+        "vector": "Multi-Factor Authentication (MFA) Fatigue",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q10",
+        "vector": "Business Email Compromise (BEC) & Whale Baiting",
+        "user_answer": "C",
+        "correct_answer": "C",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q11",
+        "vector": "Quid Pro Quo & Gift Baiting",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "Q12",
+        "vector": "Incident Escalation & Reporting Protocol",
+        "user_answer": "B",
+        "correct_answer": "B",
+        "is_correct": true
+      }
+    ]
+  }
+]
